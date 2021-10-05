@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "optibodoni-antiquaregular";
+  src: url("../assets/optibodoni-antiqua-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 2rem;
+}
+body {
+  font-family: "Source Serif Pro", serif;
+  background-color: #f9f9f9;
+}
+
+header {
+  height: 250px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  /* padding: 0.5rem; */
+  /* border: 2px solid; */
+}
+
+h1 {
+  height: 200px;
+  width: 800px;
+  color: #151414;
+  /* padding-top: 50px; */
+  font-family: "optibodoni-antiquaregular";
+  font-size: 5rem;
+
+  /* border: 2px solid; */
+}
+
+.bar {
+  width: 35px;
+  height: 3px;
+  background-color: #151414;
+  opacity: 80%;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.left-menu-container {
+  /* border: 2px solid pink; */
+  padding: 5px;
+}
+
+.hamburger {
+  padding: 15px;
+  /* border: 2px solid pink; */
+  height: 2.2rem;
+  width: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.social-media {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  /* border: solid 2px pink; */
+}
+
+.sidebar-div {
+  /* cursor: pointer; */
+  display: flex;
+  flex-direction: column;
+  line-height: 50px;
+  color: #151414;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 10px;
+  /* border: 2px solid pink; */
+  visibility: hidden;
+}
+.show-menu {
+  visibility: unset;
+}
+
+a:link,
+a:visited {
+  color: #151414;
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.arrow {
+  width: 5vw;
+  height: 5vw;
+  border: 2.5vw solid;
+  border-color: black transparent transparent black;
+  transform: rotate(-45deg);
+}
+
+.arrow.right-arrow {
+  transform: rotate(-225deg);
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+#img-div {
+  margin-left: 700px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+  height: 900px;
+  width: 800px;
+  margin-left: 650px;
+  margin-right: 650px;
+  margin-bottom: 200px;
+  /* border: 0.1px solid white; */
+}
+
+img {
+  width: 900px;
+  height: 900px;
+  object-fit: cover;
+}
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-response {
+  visibility: hidden;
+}
