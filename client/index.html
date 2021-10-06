@@ -17,12 +17,23 @@
         </div>
         <aside>
           <div class="sidebar-div">
-            <a href="#">-THE PROJECT</a>
-            <a href="#">-JOIN US</a>
-            <a href="#">-THE BOOK</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">THE PROJECT</a>
+            <a href="#">THE BOOK</a>
+            <a href="#" id="participate">PARTICIPATE</a>
           </div>
         </aside>
+        <form class="form-control">
+          <label for="name">YOUR NAME:</label>
+          <input type="text" id="name" />
+          <label for="email">EMAIL ADDRESS:</label>
+          <input type="email" id="email-address" />
+          <label for="message">SEND US A MESSAGE TO CONNECT:</label>
+          <textarea name="message" id="message" cols="40" rows="20"></textarea>
+          <button class="message-submit">SUBMIT</button>
+        </form>
       </div>
+
       <h1>BRILLIANCE OF BEING</h1>
 
       <div class="social-media">
@@ -73,31 +84,17 @@
           </a>
         </div>
       </div>
-      <!-- <aside>
-        <div class="sidebar-div">
-          <a href="#">THE PROJECT</a>
-        </div>
-        <div class="sidebar-div">
-          <a href="#">THE BOOK</a>
-        </div>
-        <div class="sidebar-div">
-          <a href="#">JOIN US</a>
-        </div>
-        <div class="sidebar-div">
-          <a href="#">JOIN</a>
-        </div>
-      </aside> -->
     </header>
 
     <div class="img-container">
       <div id="img-div">
-        <!-- <div class="arrow left-arrow"></div> -->
+        <!-- <div class="left-arrow"></div> -->
         <img
           src="https://images.unsplash.com/photo-1504733895167-3ae3cb9e27b5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHdvbWFuJTIwYmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60%22"
           alt="picture of woman"
         />
       </div>
-      <!-- <div class="arrow right-arrow"></div> -->
+      <!-- <div class="right-arrow"></div> -->
     </div>
     <p class="description">
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium iste
@@ -110,16 +107,17 @@
 
     <div class="newsletter">
       <h3>SIGN UP FOR OUR NEWSLETTER</h3>
-      <form>
-        <input type="text" />
-        <button>SUBMIT</button>
+      <form class="newsletter">
+        <input type="email" id="newsletter-email" />
+        <button class="newsletter-submit">SUBMIT</button>
       </form>
       <div class="newsletter-response">
         <h3>THANK YOU</h3>
-        <p>courtneylynn108@gmail.com</p>
+        <p id="user-email">courtneylynn108@gmail.com</p>
         <small>YOU WILLL RECIEVE AN EMAIL FROM US SHORTLY</small>
       </div>
     </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
